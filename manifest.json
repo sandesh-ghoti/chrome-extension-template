@@ -1,0 +1,38 @@
+{
+  "action": {
+    "default_icon": "_path_",
+    "default_popup": "popup.html",
+    "default_title": "_title_"
+  },
+  "background": {
+    "service_worker": "./background_script.js"
+  },
+  "description": "_description_",
+  "host_permissions": [
+    "_domainURL_/*"
+  ],
+  "icons": {
+    "128": "_path_",
+    "16": "_path_",
+    "48": "_path_"
+  },
+  "manifest_version": 3,
+  "name": "IRCTC Tatkal Automation Tool",
+  "permissions": [
+    "scripting",
+    "tabs",
+    "storage",
+    "activeTab"
+  ],
+  "version": "0.0.1",
+  "content_scripts": [
+    {
+      "matches": [
+        "_wantToRunAlwayOnSpecificWebURL_REMOVE_IF_NOT_NEEDED"
+      ],
+      "js": [
+        "contentScript.js"
+      ]
+    }
+  ]
+}
